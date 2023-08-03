@@ -1,0 +1,33 @@
+@mixin footer ($BackColor) {
+    min-height: 10vh;
+    background-color: $BackColor;
+    padding: 0 1.3rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin footer__element ($Color) {
+
+    text-decoration: underline;
+    color: $Color;
+    font-size: 1.2rem;
+    transition: 0.4s;
+    padding: 0 1rem;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin content-flex ($height, $direction, $justify, $aling) {
+    min-height: $height;
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}

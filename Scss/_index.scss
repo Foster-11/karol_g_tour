@@ -1,0 +1,160 @@
+@import "./variables";
+
+
+// fondo
+.img {
+
+    min-height: 100vh;
+    background-image: url("./img/album.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+// header index
+
+.index-header {
+
+
+    background-color: #b3ebedf8;
+    padding: 1rem;
+    @include content-flex (0, row, space-between, center);
+
+    &__container {
+        width: 192px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__container--edit {
+        width: 80px;
+    }
+
+    &__container--hidden {
+        width: 80px;
+        visibility: hidden;
+    }
+
+}
+
+
+
+
+/* --- main index--- */
+.main-index {
+
+
+    .txt {
+        @include content-flex (40vh, column, space-around, center);
+    }
+
+    .txt--first_section {
+        background-color: #d492a0ec;
+
+        .txt__title1 {
+            text-shadow: -0.1em 0em #B3EBED;
+            font-size: 4rem;
+        }
+
+        .txt__title2 {
+            text-shadow: -0.1em 0em #7608089e;
+            font-size: 3.5rem;
+
+        }
+    }
+
+    .txt--second_section {
+
+        background-color: #daf6dabc;
+        padding: 50px;
+
+        .txt__paragraph {
+            padding: 50px;
+            font-size: 3rem;
+            color: #544870;
+            text-align: center;
+        }
+
+        .txt__link {
+            border: 3px solid #92425387;
+            background-color: #d492a07c;
+            border-radius: 60px;
+            font-size: 2.5rem;
+            color: rgba(0, 0, 0, 0.774);
+            padding: 2rem;
+            transition: 0.4s;
+
+
+            &:active {
+                color: black
+            }
+
+            &:hover {
+                background-color: #d492a0c1;
+                font-size: 1.9rem;
+                text-shadow: -2px 0 rgba(233, 163, 72, 0.886);
+                color: rgb(0, 0, 0);
+            }
+
+        }
+    }
+
+
+}
+
+.txt--img {
+    padding: 70px 0;
+}
+
+
+
+/* footer*/
+
+.footer {
+
+
+    @include footer (#7D5F5F);
+
+    .footer__element {
+        @include footer__element (#EDEFED);
+    }
+
+    .footer__element--link:active {
+        color: #EDEFED;
+    }
+
+    .footer__element--link:hover {
+
+        font-size: 1.1rem;
+        color: rgba(233, 163, 72, 0.886);
+    }
+}
+
+
+
+
+
+
+/* media-quieri index */
+
+
+@media (max-width: 768px) {
+
+    .index-header__container--hidden {
+
+        visibility: visible;
+    }
+
+    .txt__paragraph {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .index-header__container--hidden {
+
+        visibility: hidden;
+    }
+}
