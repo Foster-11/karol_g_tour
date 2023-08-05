@@ -4,53 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Karol G Tour</title>
 
-    <!-- bootstrap -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./pictures/Mañana_Será_Bonito.jpg" type="image/x-icon">
+
+    <!-- Meta description -->
+    <meta name="description" content="¡Aquí encontrarás información sobre el ultimo Tour oficial de La Bichota! Además
+    de conocer un poco sobre Karol G.">
+
+    <!-- meta keywords -->
+    <meta name="keywords"
+        content="Karol G, Mañana Será Bonito, Tour Mañana Será Bonito, Tour Karol G 2023, Tour Karol G, La Bichota, Bichota">
+
+
+    <!-- bootstrap import -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 
-    <!-- fonts -->
+    <!-- fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Caveat+Brush&display=swap"
         rel="stylesheet">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./img/Mañana_Será_Bonito.jpg" type="image/x-icon">
-
-    <!-- Meta description -->
-    <meta name="description" content="">
-
-    <!-- meta keywords -->
-    <meta name="keywords" content="">
+    <!-- aos import -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-    <!-- import css -->
-    <link rel="stylesheet" href="./Style.css">
+    <!-- css import -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 
+<!-- body -->
 
-<body class="img">
+<body class="back-index" data-aos="zoom-out">
 
+    <!-- header -->
     <header class="index-header">
+        <div class="index-header-img">
+            <div class="index-header__container ">
+                <img src="./pictures/logo karolg.webp" alt=" " class="header__img">
+            </div>
 
-        <div class="index-header__container ">
-            <img src="./img/logo karolg.webp" alt=" " class="header__img">
+            <div class="index-header__container index-header__container--hidden">
+                <img src="./pictures/ocean.jpg" alt="" class="header__img">
+            </div>
+
+            <div class="index-header__container index-header__container--edit">
+                <img src="./pictures/corazon.jpg" alt="" class="header__img">
+            </div>
         </div>
-
-        <div class="index-header__container index-header__container--hidden">
-            <img src="./img/ocean.jpg" alt="" class="header__img">
-        </div>
-
-        <div class="index-header__container index-header__container--edit">
-            <img src="./img/corazon.jpg" alt="" class="header__img">
-        </div>
-
     </header>
 
+
+    <!-- main -->
     <main class="main-index">
 
         <div class="txt--img"></div>
@@ -66,25 +77,39 @@
 
         <div class="txt txt--second_section">
 
-            <p class="txt__paragraph"> !¡Aquí encontrarás información sobre el ultimo Tour oficial de La Bichota! Además
-                de conocer un poco sobre Karol G</p>
-            <a href="./Paginas/menu.html" class="txt__link">¡EMPECEMOS!</a>
+            <p class="txt__paragraph"> ¡Aquí encontrarás información sobre el ultimo Tour oficial de La Bichota! Además
+                de conocer un poco sobre Karol G.</p>
+            <a href="./Paginas/karolg.html" class="txt__link" data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">¡EMPECEMOS!</a>
         </div>
 
 
     </main>
 
+
+
+    <!-- footer -->
     <footer>
-        <ul class=" footer">
-            <li class="footer__element">COPYRIGHT2023 ©</li>
-            <li><a href="./Paginas/autor.html" class="footer__element footer__element--link">SOBRE EL CREADOR</a></li>
+        <ul class=" footer-index">
+            <li class="footer-index__element">COPYRIGHT2023 ©</li>
+            <li><a href="./Paginas/autor.html" class="footer-index__element footer-index__element--link">SOBRE EL
+                    CREADOR</a>
+            </li>
         </ul>
     </footer>
 
 
+
+    <!-- bootstrap import -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <!-- aos import -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

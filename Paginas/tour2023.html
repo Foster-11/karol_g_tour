@@ -4,23 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/Mañana_Será_Bonito.jpg" type="image/x-icon">
-    <title>Karol G Tour</title>
 
+    <title>Karol G Tour 2023</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/Mañana_Será_Bonito.jpg" type="image/x-icon">
+
+    <!-- Meta description -->
+    <meta name="description" content="¡Aquí encontrarás información sobre el ultimo Tour oficial de La Bichota! ">
+
+    <!-- meta keywords -->
+    <meta name="keywords"
+        content="Karol G, Mañana Será Bonito, Tour Mañana Será Bonito, Tour Karol G 2023, Tour Karol G, La Bichota, Bichota">
+
+
+    <!-- bootstrap import -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 
+    <!-- fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Caveat+Brush&display=swap"
         rel="stylesheet">
+
+    <!-- aos import -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../Style.css">
 </head>
 
-<body class="body-tour">
+<body class="body-tour" data-aos="zoom-out">
 
-    <header class="head-tour">
+    <header>
+        <ul class="nav justify-content-center nav-tour">
+            <li class="nav-item">
+                <a class="nav-link header-item" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link header-item" aria-current="page" href="./karolg.html">Sobre Karol</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  header-item" href="./album.html">Mañana Será Bonito - Álbum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link header-item active" href="#">Tour 2023</a>
+            </li>
+
+        </ul>
+
         <div class="header-tour">
             <h1 class="tour-title1">TOUR 2023</h1>
             <h1 class="tour-title2">MAÑANA SERÁ BONITO</h1>
@@ -147,26 +180,29 @@
 
     <footer>
 
-        <div class="footer">
-            <div class="footer__element footer__element--autor">
+        <div class="footer-tour">
+            <div class=" footer-tour__element footer-tour__element">
                 <p>COPYRIGHT2023 ©</p>
+
+            </div>
+            <div><a class="footer-tour__element footer-tour__element--link" href="./autor.html">SOBRE EL CREADOR</a>
             </div>
 
-            <ul class="footer">
-                <li><a class="footer__element footer__element--link" href="../index.html">VOLVER AL INICIO</a></li>
-                <li><a class="footer__element footer__element--link" href="./menu.html">VOLVER AL MENÚ</a></li>
-                <li><a class="footer__element footer__element--link" href="./autor.html">SOBRE EL CREADOR</a></li>
-
-            </ul>
 
         </div>
 
     </footer>
 
+    <!-- bootstrap import -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
+    <!-- aos import -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

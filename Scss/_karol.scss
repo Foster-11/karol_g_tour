@@ -1,0 +1,154 @@
+@import "./variables";
+
+.body-karol {
+    min-height: 100vh;
+    background-image: url("./pictures/watati.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+
+}
+
+
+// header
+.header-page--karol {
+    @extend .header-page;
+
+}
+
+
+// main
+.main-karol {
+    min-height: 80vh;
+}
+
+.karol-date {
+
+    @include content-flex (0, row, space-between, center);
+    min-height: 100vh;
+    background-color: #e8cfe9bd;
+
+    &__img-space {
+        height: 60vh;
+        width: 25vh;
+    }
+
+    .img2 {
+        background-image: url("./pictures/karol-fondo1.jpg");
+        background-size: cover;
+    }
+
+    .img1 {
+        background-image: url("./pictures/karol_fondo2.jpg");
+        background-size: cover;
+    }
+
+
+    .first {
+        color: #5F459D;
+    }
+
+    .second {
+        color: #9B495B;
+    }
+
+    .third {
+        padding: 0 10px 0 0;
+        color: #29696B;
+    }
+
+    .karol-date__info-title {
+        color: #29696B;
+        text-shadow: -0.2rem 0 bisque
+    }
+
+    .karol-date__info {
+        @include content-flex(0, column, space-between, center);
+        list-style-type: none;
+    }
+
+    .karol-date__list {
+        padding: 10px;
+        @include content-flex(0, row, space-between, center);
+        list-style-type: none;
+
+    }
+}
+
+
+.heigth {
+    height: 50vh;
+    @include flex-center;
+}
+
+.img-karol {
+
+    @include content-flex (0, row, space-around, center);
+
+    &__element {
+        width: 30vh;
+        height: 50vh;
+        background-size: cover;
+        padding: 20px 0;
+    }
+}
+
+.paragraph-container {
+    background-color: rgba(240, 248, 255, 0.219);
+    padding: 15px;
+    width: 70vh;
+    text-shadow: -2px 0 #1f6447;
+    color: rgb(206, 220, 231);
+    font-size: 1.5rem;
+}
+
+// footer
+.footer-karol {
+    @include footer (#4f84af);
+
+    &__element {
+        @include footer__element (#EDEFED);
+
+    }
+
+    &__element--link:active {
+        color: #EDEFED;
+    }
+
+    &__element--link:hover {
+
+        font-size: 1.1rem;
+        color: rgba(233, 163, 72, 0.886);
+    }
+}
+
+
+// media-query
+@media (max-width: 1000px) {
+
+    .main-karol {
+        min-height: 100%;
+    }
+
+    .karol-date {
+        @include content-flex (0, row, space-between, center);
+        height: 60vh;
+        background-color: #e8cfe9bd;
+
+        &__img-space {
+            visibility: hidden;
+        }
+    }
+
+}
+
+@media (max-width: 615px) {
+
+    .img-karol {
+
+        @include content-flex (0, column, space-around, center);
+
+        &__element--hidden {
+            visibility: hidden;
+        }
+    }
+}

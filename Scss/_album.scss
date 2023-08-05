@@ -1,0 +1,60 @@
+@import "./reset";
+@import "./variables";
+
+
+.back-album {
+    height: 100vh;
+    background-image: url("./pictures/Mañana_Será_Bonito.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.header-album {
+    @extend .header-tour;
+    background-color: rgba(255, 145, 0, 0.438);
+
+    .album-tittle {
+        color: rgb(213, 212, 219);
+        text-shadow: -3px 0 rgb(0, 0, 0);
+    }
+}
+
+// main album
+
+.album-main {
+    // height: 70vh;
+    overflow: auto;
+    @include content-flex (70vh, column, space-around, center);
+
+    &__item {
+        width: 50vh;
+        padding: 20px 0;
+        background-color: rgba(255, 255, 255, 0.534);
+        border: solid rgba(0, 0, 0, 0.459);
+        text-align: center;
+    }
+
+}
+
+
+// footer album
+
+.footer-album {
+    @include footer (#1c797c9c);
+
+    &__element {
+        @include footer__element (#EDEFED);
+    }
+
+    &__element--link:active {
+
+        color: #EDEFED;
+    }
+
+    &__element--link:hover {
+        font-size: 1.1rem;
+        color: rgba(233, 163, 72, 0.886);
+    }
+
+
+}

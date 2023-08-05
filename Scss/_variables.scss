@@ -3,6 +3,7 @@
     background-color: $BackColor;
     padding: 0 1.3rem;
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
@@ -30,4 +31,27 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $aling;
+}
+
+.header-page {
+    min-height: 10vh;
+    background-color: #4fb1b4d3;
+
+    .header-item {
+
+        font-size: 1.3rem;
+        color: rgb(177, 76, 76);
+        text-shadow: -2px 0 black;
+        transition: 0.5s;
+
+        &:hover {
+            font-size: 1.4rem;
+        }
+    }
+
+    .active {
+        background-color: #1c797ce8;
+        border-radius: 10px;
+    }
+
 }
