@@ -1,3 +1,4 @@
+@import "./reset";
 @import "./variables";
 
 .body-karol {
@@ -80,17 +81,34 @@
     @include flex-center;
 }
 
-.img-karol {
 
-    @include content-flex (0, row, space-around, center);
 
-    &__element {
-        width: 30vh;
-        height: 50vh;
-        background-size: cover;
-        padding: 20px 0;
+.img-grilla {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+
+    grid-template-areas: "grid-1 grid-2 "
+        "grid-3 grid-4"
+        "grid-5 grid-6";
+
+    @for $numero from 1 through 6 {
+        .grid-#{$numero} {
+            grid-area: grid-#{$numero};
+
+            align-self: center;
+            justify-self: center;
+            margin: 20px 0;
+            width: 50vh;
+            height: 40vh;
+
+        }
     }
 }
+
 
 .paragraph-container {
     background-color: rgba(240, 248, 255, 0.219);
@@ -139,16 +157,30 @@
         }
     }
 
-}
+    .img-grilla {
 
-@media (max-width: 615px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 20px;
 
-    .img-karol {
 
-        @include content-flex (0, column, space-around, center);
+        grid-template-areas: "grid-1" "grid-2"
+            "grid-3" "grid-4"
+            "grid-5" "grid-6";
 
-        &__element--hidden {
-            visibility: hidden;
+        @for $numero from 1 through 6 {
+            .grid-#{$numero} {
+                grid-area: grid-#{$numero};
+
+                align-self: center;
+                justify-self: center;
+                margin: 20px 0;
+                width: 30vh;
+                height: 20vh;
+
+            }
         }
     }
+
 }

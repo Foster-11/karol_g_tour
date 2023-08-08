@@ -2,7 +2,7 @@
 *,
 *:after,
 *:before {
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -21,22 +21,26 @@ img {
   max-width: 100%;
 }
 
-.header-page, .nav-tour, .header-page--karol {
-  min-height: 10vh;
-  background-color: rgba(79, 177, 180, 0.8274509804);
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Caveat Brush";
 }
-.header-page .header-item, .nav-tour .header-item, .header-page--karol .header-item {
-  font-size: 1.3rem;
-  color: rgb(177, 76, 76);
-  text-shadow: -2px 0 black;
-  transition: 0.5s;
+
+ul {
+  list-style-type: none;
 }
-.header-page .header-item:hover, .nav-tour .header-item:hover, .header-page--karol .header-item:hover {
-  font-size: 1.4rem;
+
+a {
+  text-decoration: none;
 }
-.header-page .active, .nav-tour .active, .header-page--karol .active {
-  background-color: rgba(28, 121, 124, 0.9098039216);
-  border-radius: 10px;
+
+img {
+  max-width: 100%;
 }
 
 .header-page, .nav-tour, .header-page--karol {
@@ -140,7 +144,7 @@ img {
 
 .footer-index {
   min-height: 10vh;
-  background-color: #7D5F5F;
+  background-color: rgba(125, 95, 95, 0.6235294118);
   padding: 0 1.3rem;
   display: flex;
   flex-direction: row;
@@ -180,6 +184,28 @@ img {
     padding: 10px;
   }
 }
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Caveat Brush";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header-page, .nav-tour, .header-page--karol {
   min-height: 10vh;
   background-color: rgba(79, 177, 180, 0.8274509804);
@@ -306,6 +332,28 @@ img {
     padding: 0;
   }
 }
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Caveat Brush";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header-page, .nav-tour, .header-page--karol {
   min-height: 10vh;
   background-color: rgba(79, 177, 180, 0.8274509804);
@@ -395,18 +443,60 @@ img {
   align-items: center;
 }
 
-.img-karol {
-  min-height: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.img-grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-areas: "grid-1 grid-2 " "grid-3 grid-4" "grid-5 grid-6";
 }
-.img-karol__element {
-  width: 30vh;
-  height: 50vh;
-  background-size: cover;
-  padding: 20px 0;
+.img-grilla .grid-1 {
+  grid-area: grid-1;
+  align-self: center;
+  justify-self: center;
+  margin: 20px 0;
+  width: 50vh;
+  height: 40vh;
+}
+.img-grilla .grid-2 {
+  grid-area: grid-2;
+  align-self: center;
+  justify-self: center;
+  margin: 20px 0;
+  width: 50vh;
+  height: 40vh;
+}
+.img-grilla .grid-3 {
+  grid-area: grid-3;
+  align-self: center;
+  justify-self: center;
+  margin: 20px 0;
+  width: 50vh;
+  height: 40vh;
+}
+.img-grilla .grid-4 {
+  grid-area: grid-4;
+  align-self: center;
+  justify-self: center;
+  margin: 20px 0;
+  width: 50vh;
+  height: 40vh;
+}
+.img-grilla .grid-5 {
+  grid-area: grid-5;
+  align-self: center;
+  justify-self: center;
+  margin: 20px 0;
+  width: 50vh;
+  height: 40vh;
+}
+.img-grilla .grid-6 {
+  grid-area: grid-6;
+  align-self: center;
+  justify-self: center;
+  margin: 20px 0;
+  width: 50vh;
+  height: 40vh;
 }
 
 .paragraph-container {
@@ -459,19 +549,84 @@ img {
   .karol-date__img-space {
     visibility: hidden;
   }
-}
-@media (max-width: 615px) {
-  .img-karol {
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  .img-grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    grid-template-areas: "grid-1" "grid-2" "grid-3" "grid-4" "grid-5" "grid-6";
   }
-  .img-karol__element--hidden {
-    visibility: hidden;
+  .img-grilla .grid-1 {
+    grid-area: grid-1;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 0;
+    width: 30vh;
+    height: 20vh;
+  }
+  .img-grilla .grid-2 {
+    grid-area: grid-2;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 0;
+    width: 30vh;
+    height: 20vh;
+  }
+  .img-grilla .grid-3 {
+    grid-area: grid-3;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 0;
+    width: 30vh;
+    height: 20vh;
+  }
+  .img-grilla .grid-4 {
+    grid-area: grid-4;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 0;
+    width: 30vh;
+    height: 20vh;
+  }
+  .img-grilla .grid-5 {
+    grid-area: grid-5;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 0;
+    width: 30vh;
+    height: 20vh;
+  }
+  .img-grilla .grid-6 {
+    grid-area: grid-6;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 0;
+    width: 30vh;
+    height: 20vh;
   }
 }
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Caveat Brush";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header-page, .nav-tour, .header-page--karol {
   min-height: 10vh;
   background-color: rgba(79, 177, 180, 0.8274509804);
@@ -572,7 +727,7 @@ img {
 *,
 *:after,
 *:before {
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -611,7 +766,7 @@ img {
 
 .back-album {
   height: 100vh;
-  background-image: url("./pictures/Mañana_Será_Bonito.jpg");
+  background-image: url("./pictures/logo_album.jpg");
   background-size: auto;
   background-attachment: fixed;
 }

@@ -1,3 +1,4 @@
+@import "./reset";
 @import "./variables";
 
 
@@ -43,6 +44,7 @@
 
 // index main
 .main-index {
+
 
     .txt--img {
         padding: 80px 0;
@@ -112,7 +114,7 @@
 .footer-index {
 
 
-    @include footer (#7D5F5F);
+    @include footer (#7d5f5f9f);
 
     &__element {
         @include footer__element (#EDEFED);

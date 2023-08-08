@@ -4,7 +4,7 @@
 
 .back-album {
     height: 100vh;
-    background-image: url("./pictures/Mañana_Será_Bonito.jpg");
+    background-image: url("./pictures/logo_album.jpg");
     background-size: auto;
     background-attachment: fixed;
 }
@@ -22,7 +22,6 @@
 // main album
 
 .album-main {
-    // height: 70vh;
     overflow: auto;
     @include content-flex (70vh, column, space-around, center);
 
